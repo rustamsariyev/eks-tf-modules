@@ -1,6 +1,12 @@
 # eks-tf-modules
 This module contains eks related terraform files
 
+# Tagging module before push.
+```
+tag=v0.0.(number) 
+git tag -a "$tag" -m "$(git log -1 --pretty=%B)" && git push origin "$tag"
+```
+
 # Configures kubectl so that you can connect to an Amazon EKS cluster.  SSO login with Admin role
 ```
 aws eks update-kubeconfig --region eu-central-1 --name webapp-prod --alias webapp-prod-admin
