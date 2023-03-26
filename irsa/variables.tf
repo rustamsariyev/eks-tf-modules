@@ -11,8 +11,8 @@ variable "serviceaccount" {
   default     = ""
 }
 
-variable "pod_namespace" {
-  description = "EKS cluster namespace were pod deployed"
+variable "namespace" {
+  description = "EKS cluster namespace"
   type        = string
   default     = ""
 }
